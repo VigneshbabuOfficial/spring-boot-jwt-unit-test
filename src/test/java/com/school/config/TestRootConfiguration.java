@@ -39,11 +39,11 @@ public class TestRootConfiguration {
 		try {
 			
 			
-			List<Users> usersList =  userRepository.findAll();
+			Users user =  userRepository.findOne();
 
 			ObjectNode objectNode = JsonNodeFactory.instance.objectNode();
-			objectNode.put("username", usersList.get(0).getUserName());
-			objectNode.put("password", usersList.get(0).getPassword());
+			objectNode.put("username", user.getUserName());
+			objectNode.put("password", user.getPassword());
 
 			System.out.println(" ############### objectNode - " + objectNode);
 
