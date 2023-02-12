@@ -7,7 +7,7 @@ application server : Wildfly 26
                DB  : postgres
         framework  : Spring Boot
    Authentication  : JWT
-   Unit Test Framework : MockMVC
+   Unit Test Framework : JUnit
 
 
 ```
